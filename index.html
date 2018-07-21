@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<meta http-equiv="Cache-Control" content="no-cache">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Yanone+Kaffeesatz:200');
+h2{
+    color:blue;
+}
+body
+{
+    background-color: #303030;
+    position: relative;
+	height: 100vh;
+	margin: 0;
+}
+.boxmain
+{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.boxcontent
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    flex-basis: auto;
+    width:auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow:4;
+}
+.boxmenu
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    width:250px;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-grow:0;
+}
+.boxcolumn
+{
+    display: flex;
+    border:1px solid #ccc;
+    flex-direction: column;
+}
+.flex-item
+{
+    text-align:center;
+    font-size: 1em;
+    padding: 1.2em;
+    color: white;
+}
+.letter
+{
+    color: white; /* Цвет символа */
+    font-size: 500%; /* Размер шрифта */
+    font-weight: extra-light;
+    font-family: 'Yanone Kaffeesatz', extra-light;
+}
+.letter2
+{
+    color: white; /* Цвет символа */
+    font-size: 30%; /* Размер шрифта */
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 5px;
+} 
+.letter:hover
+{   
+    animation-name: backgroundColorAnimation;
+    animation-duration: 1s;
+}
+
+a.lmenu
+{
+    color: white; /* Цвет ссылок */ 
+    text-decoration: none; /* Убираем подчеркивание */
+    outline: none;
+}
+a.lmenu:hover
+{
+    animation-name: linkColorAnimation;
+    animation-duration: 1s;
+    text-decoration: underline; /* Добавляем подчеркивание */
+    color: #d6d6d6; /* Цвет ссылки при наведении на нее курсора мыши */
+}
+
+@keyframes backgroundColorAnimation
+{
+    from {
+        color: white;
+    }
+    50%{
+        color: #c4c4c4;
+    }
+    to {
+        color: white;
+    }
+}
+@keyframes linkColorAnimation
+{
+    from {
+        color: white;
+    }
+    to {
+        color: #d6d6d6;
+    }
+}
+</style>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Документ HTML5</title>
+    </head>
+    <body>
+        <div class="boxmain">
+            <div class="boxmenu">
+                <div class="flex-item"><a href="about.html" class="lmenu">О канале</a></div>
+                <div class="flex-item">Последние посты</div>
+            </div>
+            <div class="boxcontent">
+                <div class="letter">
+                    Well,<br>Cinéma Times
+                    <div class="letter2">Канал о кино,<br>рецензии, отзывы, новости</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
